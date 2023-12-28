@@ -92,6 +92,7 @@ ul {
     background-color: white;
     height: 70px;
     padding: 10px 0px;
+    z-index: 2;
 }
 
 .bottom-nav .container {
