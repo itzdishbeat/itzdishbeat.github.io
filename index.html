@@ -135,6 +135,17 @@
             </div>
           </div>
         </div>
+
+        <!-- Видео секция -->
+        <div class="about-video-section">
+          <h3 class="about-video-title">Посмотрите видео обо мне</h3>
+          <div class="about-video-container">
+            <video controls preload="metadata" class="about-video">
+              <source src="videos/about.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+        </div>
       </div>
     </section>
     <section class="services">
@@ -179,8 +190,6 @@
               – Экологично выражать гнев, обиду и раздражение <br />
               – Снижать интенсивность и продолжительность тревожных <br />
               – Прорабатывать хронические чувства вины и стыда <br />
-              <b class="bold">– Развивать навыки эмоциональной саморегуляции</b>
-              <br />
               – Возвращать способность переживать радость и чувство
               удовлетворения
             </p>
@@ -424,56 +433,70 @@
             <div class="price-packages">
               <h3 class="packages-title">Пакеты услуг</h3>
 
-              <div class="packages-grid">
-                <div class="package-card">
-                  <div class="package-header">
-                    <span class="package-title">Пакет КПТ</span>
-                    <span class="package-count">5 консультаций</span>
-                  </div>
-                  <div class="package-price">
-                    <span class="package-amount">25 000 ₽</span>
-                    <span class="package-per-session"
-                      >(5 000 ₽ – 60 минут)</span
-                    >
-                  </div>
-                </div>
-
-                <div class="package-card">
-                  <div class="package-header">
-                    <span class="package-title">Пакет КПТ</span>
-                    <span class="package-count">10 консультаций</span>
-                  </div>
-                  <div class="package-price">
-                    <span class="package-amount">48 000 ₽</span>
-                    <span class="package-per-session"
-                      >(4 800 ₽ – 60 минут)</span
-                    >
+              <div class="packages-list">
+                <div class="package-item">
+                  <div class="package-item-content">
+                    <div class="package-item-text">
+                      <h4 class="package-item-title">Пакет КПТ</h4>
+                      <p class="package-item-description">
+                        5 консультаций по 60 минут каждая
+                      </p>
+                    </div>
+                    <div class="package-item-info">
+                      <span class="package-location">Онлайн</span>
+                      <span class="package-amount">25 000 ₽</span>
+                    </div>
                   </div>
                 </div>
 
-                <div class="package-card package-emdr">
-                  <div class="package-header">
-                    <span class="package-title">Пакет EMDR</span>
-                    <span class="package-count">5 консультаций</span>
-                  </div>
-                  <div class="package-price">
-                    <span class="package-amount">32 000 ₽</span>
-                    <span class="package-per-session"
-                      >(6 500 ₽ – 90 минут)</span
-                    >
+                <div class="package-divider"></div>
+
+                <div class="package-item">
+                  <div class="package-item-content">
+                    <div class="package-item-text">
+                      <h4 class="package-item-title">Пакет КПТ</h4>
+                      <p class="package-item-description">
+                        10 консультаций по 60 минут каждая
+                      </p>
+                    </div>
+                    <div class="package-item-info">
+                      <span class="package-location">Онлайн</span>
+                      <span class="package-amount">48 000 ₽</span>
+                    </div>
                   </div>
                 </div>
 
-                <div class="package-card package-emdr">
-                  <div class="package-header">
-                    <span class="package-title">Пакет EMDR</span>
-                    <span class="package-count">10 консультаций</span>
+                <div class="package-divider"></div>
+
+                <div class="package-item package-emdr">
+                  <div class="package-item-content">
+                    <div class="package-item-text">
+                      <h4 class="package-item-title">Пакет EMDR</h4>
+                      <p class="package-item-description">
+                        5 консультаций по 90 минут каждая
+                      </p>
+                    </div>
+                    <div class="package-item-info">
+                      <span class="package-location">Онлайн</span>
+                      <span class="package-amount">32 000 ₽</span>
+                    </div>
                   </div>
-                  <div class="package-price">
-                    <span class="package-amount">63 000 ₽</span>
-                    <span class="package-per-session"
-                      >(6 300 ₽ – 90 минут)</span
-                    >
+                </div>
+
+                <div class="package-divider"></div>
+
+                <div class="package-item package-emdr">
+                  <div class="package-item-content">
+                    <div class="package-item-text">
+                      <h4 class="package-item-title">Пакет EMDR</h4>
+                      <p class="package-item-description">
+                        10 консультаций по 90 минут каждая
+                      </p>
+                    </div>
+                    <div class="package-item-info">
+                      <span class="package-location">Онлайн</span>
+                      <span class="package-amount">63 000 ₽</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -634,14 +657,6 @@
           <div class="reviews-dots" id="reviews-dots">
             <!-- Dots will be generated by JavaScript -->
           </div>
-
-          <!-- Skeleton Demo Button -->
-          <div class="skeleton-demo">
-            <button class="skeleton-demo-btn" id="skeleton-demo-btn">
-              <span class="skeleton-demo-icon">🔄</span>
-              <span class="skeleton-demo-text">Показать скелет</span>
-            </button>
-          </div>
         </div>
       </div>
     </section>
@@ -664,18 +679,16 @@
           <div class="video-item">
             <div class="video-container">
               <video controls preload="metadata">
-                <source src="videos/video1.mp4" type="video/mp4" />
-                <source src="videos/video1.webm" type="video/webm" />
+                <source src="videos/video3.mp4" type="video/mp4" />
                 Ваш браузер не поддерживает видео.
               </video>
             </div>
-            <h4 class="video-title">Как всегда выигрывать?</h4>
+            <h4 class="video-title">Из чего складываются отношения?</h4>
             <p class="video-description">
-              Рассказываю о том, что такое ошибки на самом деле и как перестать
-              их бояться, чтобы увереннее достигать своих целей.
+              Помогу определить тип ваших отношений – здоровые или созависимые,
+              и понять причины их формирования
             </p>
           </div>
-
           <div class="video-item">
             <div class="video-container">
               <video controls preload="metadata">
@@ -696,14 +709,28 @@
           <div class="video-item">
             <div class="video-container">
               <video controls preload="metadata">
-                <source src="videos/video3.mp4" type="video/mp4" />
+                <source src="videos/video1.mp4" type="video/mp4" />
+                <source src="videos/video1.webm" type="video/webm" />
                 Ваш браузер не поддерживает видео.
               </video>
             </div>
-            <h4 class="video-title">Из чего складываются отношения?</h4>
+            <h4 class="video-title">Как всегда выигрывать?</h4>
             <p class="video-description">
-              Помогу определить тип ваших отношений – здоровые или созависимые,
-              и понять причины их формирования
+              Рассказываю о том, что такое ошибки на самом деле и как перестать
+              их бояться, чтобы увереннее достигать своих целей.
+            </p>
+          </div>
+
+          <div class="video-item">
+            <div class="video-container">
+              <video controls preload="metadata">
+                <source src="videos/video4.mp4" type="video/mp4" />
+                Ваш браузер не поддерживает видео.
+              </video>
+            </div>
+            <h4 class="video-title">О стыде и вине.</h4>
+            <p class="video-description">
+              Рассказываю откуда берутся эти чувства и что с этим делать.
             </p>
           </div>
         </div>
