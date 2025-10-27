@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оксана Калинина | Психолог</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -59,13 +63,6 @@
           <a href="#" class="button hero__cta">
             <span>Связаться со мной</span>
           </a>
-        </div>
-        <div class="hero__right">
-          <img
-            src="images/hero.jpeg"
-            alt="Психологическая помощь"
-            class="hero__image"
-          />
         </div>
       </div>
     </section>
@@ -435,16 +432,14 @@
 
               <div class="packages-list">
                 <div class="package-item">
-                  <div class="package-item-content">
-                    <div class="package-item-text">
-                      <h4 class="package-item-title">Пакет КПТ</h4>
-                      <p class="package-item-description">
-                        5 консультаций по 60 минут каждая
-                      </p>
-                    </div>
-                    <div class="package-item-info">
-                      <span class="package-location">Онлайн</span>
-                      <span class="package-amount">25 000 ₽</span>
+                  <div class="package-item-header">
+                    <h4 class="package-item-title">Пакет КПТ</h4>
+                    <span class="package-item-count">5 консультаций</span>
+                  </div>
+                  <div class="package-item-prices">
+                    <div class="package-price-total">25 000 ₽</div>
+                    <div class="package-price-per-hour">
+                      (5 000 ₽ за одну консультацию)
                     </div>
                   </div>
                 </div>
@@ -452,16 +447,14 @@
                 <div class="package-divider"></div>
 
                 <div class="package-item">
-                  <div class="package-item-content">
-                    <div class="package-item-text">
-                      <h4 class="package-item-title">Пакет КПТ</h4>
-                      <p class="package-item-description">
-                        10 консультаций по 60 минут каждая
-                      </p>
-                    </div>
-                    <div class="package-item-info">
-                      <span class="package-location">Онлайн</span>
-                      <span class="package-amount">48 000 ₽</span>
+                  <div class="package-item-header">
+                    <h4 class="package-item-title">Пакет КПТ</h4>
+                    <span class="package-item-count">10 консультаций</span>
+                  </div>
+                  <div class="package-item-prices">
+                    <div class="package-price-total">48 000 ₽</div>
+                    <div class="package-price-per-hour">
+                      (4 800 ₽ за одну консультацию)
                     </div>
                   </div>
                 </div>
@@ -469,16 +462,14 @@
                 <div class="package-divider"></div>
 
                 <div class="package-item package-emdr">
-                  <div class="package-item-content">
-                    <div class="package-item-text">
-                      <h4 class="package-item-title">Пакет EMDR</h4>
-                      <p class="package-item-description">
-                        5 консультаций по 90 минут каждая
-                      </p>
-                    </div>
-                    <div class="package-item-info">
-                      <span class="package-location">Онлайн</span>
-                      <span class="package-amount">32 000 ₽</span>
+                  <div class="package-item-header">
+                    <h4 class="package-item-title">Пакет EMDR</h4>
+                    <span class="package-item-count">5 консультаций</span>
+                  </div>
+                  <div class="package-item-prices">
+                    <div class="package-price-total">32 000 ₽</div>
+                    <div class="package-price-per-hour">
+                      (4 267 ₽ за одну консультацию)
                     </div>
                   </div>
                 </div>
@@ -486,16 +477,14 @@
                 <div class="package-divider"></div>
 
                 <div class="package-item package-emdr">
-                  <div class="package-item-content">
-                    <div class="package-item-text">
-                      <h4 class="package-item-title">Пакет EMDR</h4>
-                      <p class="package-item-description">
-                        10 консультаций по 90 минут каждая
-                      </p>
-                    </div>
-                    <div class="package-item-info">
-                      <span class="package-location">Онлайн</span>
-                      <span class="package-amount">63 000 ₽</span>
+                  <div class="package-item-header">
+                    <h4 class="package-item-title">Пакет EMDR</h4>
+                    <span class="package-item-count">10 консультаций</span>
+                  </div>
+                  <div class="package-item-prices">
+                    <div class="package-price-total">63 000 ₽</div>
+                    <div class="package-price-per-hour">
+                      (4 200 ₽ за одну консультацию)
                     </div>
                   </div>
                 </div>
@@ -520,143 +509,178 @@
           </p>
         </div>
 
-        <!-- Skeleton loader -->
-        <div class="reviews-skeleton" id="reviews-skeleton">
-          <div class="reviews-skeleton-container">
-            <div class="reviews-skeleton-track">
-              <div class="review-skeleton-slide">
-                <div class="review-skeleton-image"></div>
-              </div>
-              <div class="review-skeleton-slide">
-                <div class="review-skeleton-image"></div>
-              </div>
-              <div class="review-skeleton-slide">
-                <div class="review-skeleton-image"></div>
-              </div>
-            </div>
-          </div>
-          <div class="reviews-skeleton-navigation">
-            <div class="reviews-skeleton-btn"></div>
-            <div class="reviews-skeleton-btn"></div>
-          </div>
-          <div class="reviews-skeleton-dots">
-            <div class="reviews-skeleton-dot"></div>
-            <div class="reviews-skeleton-dot"></div>
-            <div class="reviews-skeleton-dot"></div>
-          </div>
+        <div class="reviews-navigation">
+          <button class="reviews-btn reviews-btn-prev" id="reviews-prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="reviews-btn reviews-btn-next" id="reviews-next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
 
-        <div class="reviews-slider" id="reviews-slider" style="display: none">
-          <div class="reviews-slider-container">
-            <div class="reviews-slider-track" id="reviews-track">
-              <div class="review-slide">
-                <img
-                  src="images/revirew_1.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+        <div class="swiper reviews-slider" id="reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "На самом деле я не знала в какое русло уйдет наше общение, во
+                  время наших встреч открылось несколько важных вещей о которых
+                  я даже не задумывалась, что меня откровенно потрясло. Казалось
+                  бы все на поверхности, но не тут то было, это очень голубой
+                  процесс. Мне стало ясно ЧТО МНЕ МЕШАЕТ, осталось понять
+                  ПОЧЕМУ. И вот тут начинается самое интересное, это работа с
+                  собой и конечно же с Оксаной"
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_2.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "Оксана, спасибо тебе огромное. Я чуть ли не все 26 лет
+                  постоянно думала о том, как изменить себя, свою жизнь, начать
+                  с чистого листа, преобразиться. А надо было начинать с того,
+                  чтобы разобраться в себе и понять, кто я и чего хочу.
+                  <br /><br />
+                  Путь еще долгий, но первые результаты уже переплюнули все мои
+                  ожидания. <br /><br />
+                  Я счастлива, что попала именно к тебе - мне очень легко
+                  раскрываться тебе на сессиях, я без стеснения рассказываю о
+                  каких-то вещах, о которых даже близкой подруге бы рассказывала
+                  с зажимом, боясь быть неправильно понятой.
+                  <br /><br />Спасибо, что ведешь меня на этом пути!"
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_3.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "У меня такое окно в груди открылось! В плечах! <br />
+                  У меня столько места сейчас здесь!!!! Я просто СТОЛЬКИМ новым,
+                  своим, классным и вдохновляющим могу это пространство
+                  заполнить <br /><br />
+                  Я в шоке, у меня как будто третий глаз открылся <br />
+                  Новый путь<br />
+                  Новая жизнь<br /><br />
+                  Блин я просто в шоке<br /><br />
+                  Я тебе очень благодарна"
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_4.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "Добрый день! <br />Оксана, благодарю за консультацию, которая
+                  позволила мне ответить на многие вопросы и посмотреть на
+                  ситуацию с другой стороны. Чувство тревоги, которое охватывало
+                  меня в начале сессии, снизилось до минимальных значений и я
+                  обрела спокойствие, принятие ситуации и желание действовать.
+                  Спасибо за поддержку и понимание ситуации!"
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_5.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "Оксана, привет! <br />
+                  Хочу поделиться впечатлениями, после занятий с тобой
+                  <br />Выбрала твои консультации интуитивно и не прогадала! С
+                  тобой легко, полезно и позитивно! <br />
+                  Стереотип о занятиях с психологом, травмах, слезах - разрушен.
+                  С тобой я учусь познавать себя, ощущать, чувствовать и
+                  действовать. Наставник, спасибо за веру, силы и знания"
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_6.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "Оксана, хочу выразить огромную благодарность за наш первый
+                  сеанс-знакомство. После нашей беседы, я поняла над чем надо
+                  работать и куда двигаться дальше. И самое главное, я получила
+                  понимание и поддержку, что в моем случае таку нужно. Спасибо"
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_7.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "Оксана, добрый день. Спасибо за консультацию. Мне
+                  понравилось, что весь процесс у вас так четко выстроен, всё
+                  системно. Это позволяет эффективно и быстро разобрать
+                  волнующую ситуацию и найти путь решения. Мне нравится ваша
+                  доброжелательность, это позволяет лучше раскрыться и честно
+                  ответить на вопросы."
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_8.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "Оксана, хотела бы поблагодарить вас за проделанную работу! Вы
+                  мне очень помогли в принятии решений, просмотра волнующих меня
+                  ситуаций под разными углами, уменьшить тревогу в кризисный
+                  момент! В процессе работы вы уверенно направляли ход моих
+                  мыслей в заданном направлении, после сеанса я всегда находила
+                  себя в состоянии уверенности и найденных ориентиров."
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_9.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "Хороший специалист, умеешь расположить к себе, считаю это
+                  хорошее качество в данной сфере, для меня особенно. Было
+                  проведено пару встреч из которых я многое для себя поняла и
+                  открыла. И что главное, мне хочется продолжать работать над
+                  собой с тобой."
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_10.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "После сессий чувствую себя воодушевленной, готовой покорять
+                  весь мир. Так же общаясь на сессии смотришь на себя на свои
+                  качества и на свои действия с другой стороны, так как ты
+                  Оксана, помогаешь взглянуть на себя по другому. Лучше начинаю
+                  понимать и разбираться в себе, так же прислушиваться больше к
+                  себе самой. Эмоциональное состояние лучше. Благодарю тебя за
+                  твою работу со мной"
+                </p>
               </div>
-              <div class="review-slide">
-                <img
-                  src="images/revirew_11.jpeg"
-                  alt="Отзыв клиента"
-                  class="review-image"
-                />
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-text">
+                  "Оксана, добрый день! Скажу честно, наше занятие мне очень
+                  помогло, стало значительнее легче морально. Часто обращаюсь к
+                  слову-якорю в сложные моменты, сразу же горечь уходит . Эмоции
+                  от занятия только самые положительные ! Сразу начала
+                  налаживать свою жизнь, строить планы, «собралась» морально .
+                  Оксана-ты замечательный профессионал, занятие прошло в
+                  максимально комфортной и позитивной атмосфере Очень рада
+                  нашему знакомству и спасибо за ПОМОЩЬ !"
+                </p>
               </div>
             </div>
           </div>
-
-          <div class="reviews-navigation">
-            <button class="reviews-btn reviews-btn-prev" id="reviews-prev">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M15 18L9 12L15 6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <button class="reviews-btn reviews-btn-next" id="reviews-next">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M9 18L15 12L9 6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <div class="reviews-dots" id="reviews-dots">
-            <!-- Dots will be generated by JavaScript -->
-          </div>
+          <div class="swiper-pagination reviews-dots" id="reviews-dots"></div>
         </div>
       </div>
     </section>
@@ -706,6 +730,19 @@
               простое умение помогает улучшить все сферы жизни.
             </p>
           </div>
+
+          <div class="video-item">
+            <div class="video-container">
+              <video controls preload="metadata">
+                <source src="videos/video4.mp4" type="video/mp4" />
+                Ваш браузер не поддерживает видео.
+              </video>
+            </div>
+            <h4 class="video-title">О стыде и вине.</h4>
+            <p class="video-description">
+              Рассказываю откуда берутся эти чувства и что с этим делать.
+            </p>
+          </div>
           <div class="video-item">
             <div class="video-container">
               <video controls preload="metadata">
@@ -718,19 +755,6 @@
             <p class="video-description">
               Рассказываю о том, что такое ошибки на самом деле и как перестать
               их бояться, чтобы увереннее достигать своих целей.
-            </p>
-          </div>
-
-          <div class="video-item">
-            <div class="video-container">
-              <video controls preload="metadata">
-                <source src="videos/video4.mp4" type="video/mp4" />
-                Ваш браузер не поддерживает видео.
-              </video>
-            </div>
-            <h4 class="video-title">О стыде и вине.</h4>
-            <p class="video-description">
-              Рассказываю откуда берутся эти чувства и что с этим делать.
             </p>
           </div>
         </div>
@@ -965,137 +989,40 @@
         }
       });
 
-      // Reviews Slider functionality
-      class ReviewsSlider {
-        constructor() {
-          this.track = document.getElementById("reviews-track");
-          this.slides = document.querySelectorAll(".review-slide");
-          this.prevBtn = document.getElementById("reviews-prev");
-          this.nextBtn = document.getElementById("reviews-next");
-          this.dotsContainer = document.getElementById("reviews-dots");
-          this.currentSlide = 0;
-          this.totalSlides = this.slides.length;
-
-          this.init();
-        }
-
-        init() {
-          this.createDots();
-          this.bindEvents();
-          this.updateSlider();
-        }
-
-        createDots() {
-          for (let i = 0; i < this.totalSlides; i++) {
-            const dot = document.createElement("button");
-            dot.className = "reviews-dot";
-            if (i === 0) dot.classList.add("active");
-            dot.addEventListener("click", () => this.goToSlide(i));
-            this.dotsContainer.appendChild(dot);
-          }
-        }
-
-        bindEvents() {
-          this.prevBtn.addEventListener("click", () => this.prevSlide());
-          this.nextBtn.addEventListener("click", () => this.nextSlide());
-
-          // Auto-play functionality
-          this.startAutoPlay();
-
-          // Pause auto-play on hover
-          const sliderContainer = document.querySelector(".reviews-slider");
-          sliderContainer.addEventListener("mouseenter", () =>
-            this.stopAutoPlay()
-          );
-          sliderContainer.addEventListener("mouseleave", () =>
-            this.startAutoPlay()
-          );
-        }
-
-        goToSlide(slideIndex) {
-          this.currentSlide = slideIndex;
-          this.updateSlider();
-        }
-
-        nextSlide() {
-          this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
-          this.updateSlider();
-        }
-
-        prevSlide() {
-          this.currentSlide =
-            (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
-          this.updateSlider();
-        }
-
-        updateSlider() {
-          const translateX = -this.currentSlide * 100;
-          this.track.style.transform = `translateX(${translateX}%)`;
-
-          // Update dots
-          const dots = this.dotsContainer.querySelectorAll(".reviews-dot");
-          dots.forEach((dot, index) => {
-            dot.classList.toggle("active", index === this.currentSlide);
-          });
-        }
-
-        startAutoPlay() {
-          this.autoPlayInterval = setInterval(() => {
-            this.nextSlide();
-          }, 5000); // Change slide every 5 seconds
-        }
-
-        stopAutoPlay() {
-          if (this.autoPlayInterval) {
-            clearInterval(this.autoPlayInterval);
-          }
-        }
-      }
-
       // Initialize reviews slider when DOM is loaded
       document.addEventListener("DOMContentLoaded", () => {
-        // Show skeleton initially
-        const skeleton = document.getElementById("reviews-skeleton");
-        const slider = document.getElementById("reviews-slider");
-
-        // Simulate loading time (2-3 seconds)
-        setTimeout(() => {
-          // Hide skeleton and show actual slider
-          skeleton.style.display = "none";
-          slider.style.display = "block";
-
-          // Initialize the actual slider
-          new ReviewsSlider();
-
-          // Add skeleton demo functionality
-          const skeletonDemoBtn = document.getElementById("skeleton-demo-btn");
-          const skeletonDemoText = skeletonDemoBtn.querySelector(
-            ".skeleton-demo-text"
-          );
-          const skeletonDemoIcon = skeletonDemoBtn.querySelector(
-            ".skeleton-demo-icon"
-          );
-
-          skeletonDemoBtn.addEventListener("click", () => {
-            // Show skeleton
-            skeleton.style.display = "block";
-            slider.style.display = "none";
-
-            // Update button text and icon
-            skeletonDemoText.textContent = "Скрыть скелет";
-            skeletonDemoIcon.textContent = "👁️";
-
-            // After 3 seconds, show slider again
-            setTimeout(() => {
-              skeleton.style.display = "none";
-              slider.style.display = "block";
-
-              // Reset button text and icon
-              skeletonDemoText.textContent = "Показать скелет";
-              skeletonDemoIcon.textContent = "🔄";
-            }, 3000);
-          });
-        }, 2500);
+        // Initialize Swiper
+        const swiper = new Swiper(".reviews-slider", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: "#reviews-next",
+            prevEl: "#reviews-prev",
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 25,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          },
+        });
 
         // Set first frame as poster for videos
         const videos = document.querySelectorAll("video");
@@ -1128,5 +1055,6 @@
         });
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
