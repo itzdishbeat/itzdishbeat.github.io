@@ -1161,11 +1161,13 @@ ul {
   cursor: pointer;
   transition: all 0.3s ease;
   align-self: flex-start;
+  background-color: var(--primary);
+  color: #ffffff;
 }
 
 .form-button:hover {
-  background-color: var(--primary);
-  color: #ffffff;
+  background-color: #fff;
+  color: var(--primary);
 }
 
 .form-disclaimer {
@@ -1451,7 +1453,7 @@ ul {
   }
 
   .form-title {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 25px;
     text-align: center;
   }
@@ -1610,10 +1612,12 @@ ul {
   .form-button {
     font-size: 14px;
     padding: 10px 20px;
+    background-color: var(--primary);
+    color: #ffffff;
   }
 
   .form-title {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
   }
