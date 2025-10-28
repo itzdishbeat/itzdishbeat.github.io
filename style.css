@@ -90,7 +90,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text);
+  background-color: var(--primary);
+  color: #ffffff;
 }
 
 .section-number,
@@ -182,8 +183,15 @@ ul {
   color: var(--text);
 }
 
+u {
+  text-decoration: underline;
+  color: var(--text);
+}
+
 .header__button {
   gap: 6px;
+  background-color: transparent;
+  color: var(--text);
 }
 
 /* Burger Menu */
@@ -373,8 +381,8 @@ ul {
 .hero__cta {
   margin-top: 20px;
   padding: 11px 23px;
-  color: var(--text);
-  border: var(--primary) 1px solid;
+  background-color: var(--primary);
+  color: #ffffff;
   gap: 6px;
   margin-top: 40px;
 }
@@ -508,8 +516,8 @@ ul {
   margin-right: auto;
   margin-top: 20px;
   padding: 11px 23px;
-  color: var(--text);
-  border: var(--primary) 1px solid;
+  background-color: var(--primary);
+  color: #ffffff;
   margin-top: 30px;
   max-width: 250px;
 }
