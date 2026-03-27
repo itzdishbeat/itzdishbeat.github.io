@@ -1,1058 +1,501 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оксана Калинина | Психолог</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <title>Генералова Анастасия | Психолог</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav header__nav">
-        <div class="container header__container">
-          <a href="#" class="logo header__logo">
-            <img src="images/logo.svg" alt="logo" class="logo__img" />
-          </a>
-
-          <button class="burger" id="burger">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
+    <header>
+      <div class="container">
+        <ul class="header-wrapper">
+          <li>
+            <span class="header-logo"
+              ><span>генералова анастасия</span> <span>|</span
+              ><span>психолог</span></span
+            >
+          </li>
+          <li class="header-nav-list">
+            <nav>
+              <ul class="header-nav" id="headerNav">
+                <li><a href="#about">обо мне</a></li>
+                <li><a href="#services">услуги</a></li>
+                <li><a href="#advantages">преимущества</a></li>
+                <li><a href="#education">образование</a></li>
+                <li><a href="#reviews">отзывы</a></li>
+                <li class="mobile-only"><button class="button header-cta-btn">связаться со мной</button></li>
+              </ul>
+            </nav>
+          </li>
+          <li class="desktop-only"><button class="button header-cta-btn">связаться со мной</button></li>
+          <button class="header-burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
-
-          <ul class="menu header__menu" id="menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link">пункт меню</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">пункт меню</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">пункт меню</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">пункт меню</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">пункт меню</a>
-            </li>
-          </ul>
-          <a href="#" class="button header__button">
-            <span class="button_plus"><img src="images/plus.svg" /></span>
-            <span>Связаться со мной</span>
-          </a>
-        </div>
-      </nav>
+        </ul>
+      </div>
     </header>
-    <section class="hero">
-      <div class="container hero__container">
-        <div class="hero__left">
-          <div class="hero__eyebrow">ОКСАНА КАЛИНИНА • МАГИСТР ПСИХОЛОГИИ</div>
-          <h1 class="hero__title">
-            Путь к здоровым отношениям с собой и партнером
-          </h1>
-          <p class="hero__subtitle">
-            Специализируюсь на работе с личными границами и самооценкой.
-            <br />Состою в Ассоциациях КПП и EMDR. <br />Использую научно
-            доказанные методы.
-          </p>
-          <a href="#" class="button hero__cta">
-            <span>Связаться со мной</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <div class="section-eyebrow">
-          <h3 class="section-name">обо мне</h3>
-        </div>
-        <div class="flex gap-80">
-          <div class="half">
-            <img src="images/about.jpeg" alt="" class="about-img" />
+    <main>
+      <section class="hero">
+        <img src="assets/images/ветка.png" alt="" class="hero-branch" />
+        <div class="container">
+          <h1>Генералова Анастасия</h1>
+          <div class="hero-content">
+            <p>
+              Психолог с высшим профессиональным образованием. Специализируюсь
+              на вопросах самооценки и уверенности, взаимоотношении мужчины и
+              женщины на всех этапах, прохождении кризисов и горя. В своей
+              практической работе использую когнитивно-поведенческую терапию,
+              эриксоновский гипноз, системная терапия.
+            </p>
+            <button class="button">связаться со мной</button>
           </div>
-          <div class="half">
-            <div class="heading-container">
-              <h2 class="h2">Меня зовут <br />Оксана Калинина</h2>
-              <p class="body">
-                Я магистр психологии, состою в Ассоциациях КПП и EMDR.
-                Специализируюсь на работе с личными границами и самооценкой для
-                построения здоровых отношений с собой и партнером. В своей
-                работе я использую научно доказанные методы КПТ и EMDR.
-                Убедилась на собственном опыте: терапия — это самый короткий
-                путь к изменениям. Она экономит годы, которые можно потратить на
-                счастливую жизнь. <br />
-                <br />Моя цель — не ваша зависимость от терапии, а ваша свобода.
-                Вы получите практичные инструменты для самостоятельного решения
-                проблем — навык, который останется с вами навсегда.
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-wrapper">
+            <div>
+              <h2>обо мне</h2>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+                purus vel nibh lacinia fermentum. Integer euismod, nisl vel
+                convallis facilisis, sapien justo ultricies sapien, nec
+                ultricies nulla urna eget nunc. Vivamus at tincidunt sapien.
+                Donec nec risus ut libero posuere gravida. Curabitur feugiat,
+                mauris at suscipit varius, urna sapien tincidunt lorem, vel
+                viverra turpis orci nec velit. Suspendisse potenti. Nulla
+                facilisi. Aenean eget sem at velit faucibus malesuada.
+                <br /><br />
+                Praesent auctor, magna sed tincidunt vulputate, erat erat cursus
+                risus, non facilisis justo ligula non lectus. Morbi ac mi sed
+                turpis consequat interdum. Phasellus a arcu ac elit faucibus
+                pellentesque. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia curae; Fusce vel nisl id
+                sapien bibendum tincidunt. Integer id lorem at augue tincidunt
+                suscipit. Nunc eget nulla at sapien malesuada feugiat.
               </p>
-            </div>
-            <div class="divider"></div>
-            <div class="about__cards flex">
-              <div class="about__card">
-                <div class="about__heading-container flex">
-                  <h4 class="about__card-heading body">
-                    <b class="bold">КПТ</b>
-                  </h4>
-                  <button class="about__extra-button" data-popup="cbt">
-                    <span class="button_plus"
-                      ><img src="images/plus.svg"
-                    /></span>
-                    <div class="flex about__extra-button-text-container">
-                      <span class="body">Узнать больше...</span>
-                    </div>
-                  </button>
+              <div class="about-stats">
+                <div class="about-stat">
+                  <span class="about-stat-number">10</span>
+                  <span class="about-stat-text">лет опыта</span>
                 </div>
-                <h4 class="about__card-text body">
-                  Когнитивно-поведенческая терапия
-                </h4>
-              </div>
-              <div class="about__card">
-                <div class="about__heading-container flex">
-                  <h4 class="about__card-heading body">
-                    <b class="bold"> EMDR </b>
-                  </h4>
-                  <button class="about__extra-button" data-popup="emdr">
-                    <span class="button_plus"
-                      ><img src="images/plus.svg"
-                    /></span>
-                    <div class="flex about__extra-button-text-container">
-                      <span class="body">Узнать больше...</span>
-                    </div>
-                  </button>
-                </div>
-                <h4 class="about__card-text body">
-                  Десенсибилизация и переработка движением глаз
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Видео секция -->
-        <div class="about-video-section">
-          <h3 class="about-video-title">Посмотрите видео обо мне</h3>
-          <div class="about-video-container">
-            <video controls preload="metadata" class="about-video">
-              <source src="videos/about.mp4" type="video/mp4" />
-              Ваш браузер не поддерживает видео.
-            </video>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="services">
-      <div class="container">
-        <div class="section-eyebrow">
-          <h3 class="section-name">услуги</h3>
-        </div>
-
-        <div class="heading-container flex">
-          <div class="half">
-            <h2 class="h2">С какими темами я работаю</h2>
-          </div>
-          <div class="half">
-            <p class="heading-description mw-585">
-              Специализируюсь на работе с личными границами и самооценкой для
-              построения здоровых отношений.
-            </p>
-          </div>
-        </div>
-
-        <div class="services-grid">
-          <div class="service-card">
-            <h4 class="service-card-heading">Самооценка</h4>
-            <p class="service-card-text body">
-              Помогаю справиться с: <br />
-              – Самокритикой и ощущением «со мной что-то не так»<br />
-              – Неуверенностью в своих силах и постоянными сомнениями<br />
-              – Страхом ошибки, неудачи и прокрастинацией<br />
-              – Болезненной зависимостью от чужого мнения и страхом осуждения<br />
-              – Трудностями в отстаивании личных границ и неумением говорить
-              «нет»<br />
-              – Низкой самооценкой и страхом быть отвергнутым в отношениях
-            </p>
-            <img src="images/sc1.jpg" alt="" class="service-card-imgae" />
-          </div>
-          <div class="service-card">
-            <h4 class="service-card-heading">Эмоции и чувства</h4>
-            <p class="service-card-text body">
-              Помогаю управлять эмоциональным состоянием: <br />
-              – Распознавать и понимать свои истинные чувства и потребности
-              <br />
-              – Экологично выражать гнев, обиду и раздражение <br />
-              – Снижать интенсивность и продолжительность тревожных <br />
-              – Прорабатывать хронические чувства вины и стыда <br />
-              – Возвращать способность переживать радость и чувство
-              удовлетворения
-            </p>
-            <img src="images/sc2.png" alt="" class="service-card-imgae" />
-          </div>
-          <div class="service-card">
-            <h4 class="service-card-heading">Отношения и коммуникация</h4>
-            <p class="service-card-text body">
-              Помогаю выстроить здоровые отношения: <br />
-              – Преодолевать кризисы (измены, ревность, обиды, расставания)<br />
-              – Справляться с эмоциональной зависимостью и созависимостью<br />
-              – Разрывать круг повторяющихся сценариев<br />
-              – Восстанавливать доверие и эмоциональную близость<br />
-              – Налаживать конструктивное общение и разрешать конфликты
-            </p>
-            <img src="images/sc3.png" alt="" class="service-card-imgae" />
-          </div>
-        </div>
-        <a href="#" class="button service-button">
-          <span>Связаться со мной</span>
-        </a>
-      </div>
-    </section>
-    <section class="process">
-      <div class="container">
-        <div class="section-eyebrow"></div>
-
-        <div class="heading-container">
-          <h2 class="h2">Как проходит наша работа</h2>
-          <p class="heading-description mw-585">
-            Пошаговый процесс, который поможет вам достичь желаемых изменений в
-            жизни.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-number">1</div>
-            <div class="timeline-content">
-              <h4 class="timeline-title">
-                Первая встреча — создаем доверие и понимание
-              </h4>
-              <p class="timeline-description body">
-                Я внимательно выслушаю вашу историю, не осуждая и не давая
-                поспешных советов. Мы определим, что именно вас беспокоит, и я
-                объясню, как мы можем это решить. Вы сами почувствуете, подходит
-                ли вам мой стиль работы.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-number">2</div>
-            <div class="timeline-content">
-              <h4 class="timeline-title">
-                Диагностика — находим истинные причины
-              </h4>
-              <p class="timeline-description body">
-                Часто то, что кажется проблемой на поверхности, — лишь симптом.
-                Мы исследуем глубинные причины: детские травмы, ограничивающие
-                убеждения, неосознанные страхи. Как айсберг — видимая часть
-                мала, основная работа происходит с тем, что скрыто.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-number">3</div>
-            <div class="timeline-content">
-              <h4 class="timeline-title">
-                Работа с бессознательным — меняем программы изнутри
-              </h4>
-              <p class="timeline-description body">
-                Используя проверенные методы, мы "перепрограммируем" те
-                автоматические реакции, которые мешают вам жить. Это не просто
-                понимание проблемы умом — это реальные изменения на уровне
-                нервной системы.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-number">4</div>
-            <div class="timeline-content">
-              <h4 class="timeline-title">
-                Закрепление результата — новые навыки в реальной жизни
-              </h4>
-              <p class="timeline-description body">
-                Мы отрабатываем новые способы реагирования в безопасной
-                обстановке, а затем применяем их в жизни. Я даю конкретные
-                техники и упражнения, которые помогут вам закрепить изменения
-                навсегда.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="result">
-      <div class="container">
-        <div class="section-eyebrow">
-          <h3 class="section-name">результат</h3>
-        </div>
-        <div class="heading-container">
-          <h2 class="h2">Что вы получите в результате</h2>
-          <p class="heading-description mw-585">
-            Конкретные изменения, которые произойдут в вашей жизни после работы
-            со мной.
-          </p>
-        </div>
-
-        <div class="results-grid">
-          <div class="result-card">
-            <div class="result-icon">✓</div>
-            <h4 class="result-title">Здоровые границы</h4>
-            <p class="result-description body">
-              Научитесь говорить "нет" без чувства вины, защищать свои интересы
-              и строить отношения на основе взаимного уважения.
-            </p>
-          </div>
-
-          <div class="result-card">
-            <div class="result-icon">✓</div>
-            <h4 class="result-title">Уверенность в себе</h4>
-            <p class="result-description body">
-              Избавитесь от самокритики, научитесь ценить свои достижения и
-              принимать себя такой, какая вы есть.
-            </p>
-          </div>
-
-          <div class="result-card">
-            <div class="result-icon">✓</div>
-            <h4 class="result-title">Эмоциональная стабильность</h4>
-            <p class="result-description body">
-              Научитесь управлять своими эмоциями, справляться со стрессом и
-              сохранять спокойствие в сложных ситуациях.
-            </p>
-          </div>
-
-          <div class="result-card">
-            <div class="result-icon">✓</div>
-            <h4 class="result-title">Гармоничные отношения</h4>
-            <p class="result-description body">
-              Построите здоровые отношения с партнером, семьей и друзьями,
-              основанные на доверии и открытом общении.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="special">
-      <div class="container">
-        <div class="heading-container">
-          <h2 class="h2">Готовы начать свой путь к переменам?</h2>
-          <p class="heading-description mw-585">
-            "Это не мечта, а достижимая реальность. Ваша новая жизнь начинается
-            с одного решения — начать работу над собой
-            <b class="bold">уже сейчас</b>!"
-          </p>
-        </div>
-        <a href="#" class="button service-button">
-          <span>Записаться на консультацию</span>
-        </a>
-      </div>
-    </section>
-    <section class="price">
-      <div class="container">
-        <div class="section-eyebrow">
-          <h3 class="section-name">стоимость</h3>
-        </div>
-
-        <div class="heading-container">
-          <h2 class="h2">Прозрачные цены</h2>
-          <p class="heading-description mw-585">На все услуги</p>
-        </div>
-
-        <div class="price-content">
-          <div class="price-right">
-            <div class="price-list">
-              <div class="price-item">
-                <div class="price-item-content">
-                  <div class="price-item-text">
-                    <h4 class="price-item-title">
-                      Диагностическая консультация
-                    </h4>
-                    <p class="price-item-description">
-                      Знакомство и определение запроса
-                    </p>
-                  </div>
-                  <div class="price-item-info">
-                    <span class="price-location">Онлайн</span>
-                    <span class="price-amount">Бесплатно / 20 мин</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="price-divider"></div>
-
-              <div class="price-item">
-                <div class="price-item-content">
-                  <div class="price-item-text">
-                    <h4 class="price-item-title">
-                      Индивидуальная консультация
-                    </h4>
-                    <p class="price-item-description">
-                      Работа с мыслями, убеждениями, ошибками мышления
-                    </p>
-                  </div>
-                  <div class="price-item-info">
-                    <span class="price-location">Онлайн</span>
-                    <span class="price-amount">6 000 ₽ / 60 мин</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="price-divider"></div>
-
-              <div class="price-item">
-                <div class="price-item-content">
-                  <div class="price-item-text">
-                    <h4 class="price-item-title">Терапия EMDR</h4>
-                    <p class="price-item-description">
-                      Проработка травматичного опыта, воспоминаний
-                    </p>
-                  </div>
-                  <div class="price-item-info">
-                    <span class="price-location">Онлайн</span>
-                    <span class="price-amount">7 500 ₽ / 90 мин</span>
-                  </div>
+                <div class="about-stat">
+                  <span class="about-stat-number">&gt;500</span>
+                  <span class="about-stat-text">довольных<br />клиентов</span>
                 </div>
               </div>
             </div>
-
-            <!-- Пакеты услуг -->
-            <div class="price-packages">
-              <h3 class="packages-title">Пакеты услуг</h3>
-
-              <div class="packages-list">
-                <div class="package-item">
-                  <div class="package-item-header">
-                    <h4 class="package-item-title">Пакет КПТ</h4>
-                    <span class="package-item-count">5 консультаций</span>
-                  </div>
-                  <div class="package-item-prices">
-                    <div class="package-price-total">25 000 ₽</div>
-                    <div class="package-price-per-hour">
-                      (5 000 ₽ за одну консультацию)
-                    </div>
-                  </div>
-                </div>
-
-                <div class="package-divider"></div>
-
-                <div class="package-item">
-                  <div class="package-item-header">
-                    <h4 class="package-item-title">Пакет КПТ</h4>
-                    <span class="package-item-count">10 консультаций</span>
-                  </div>
-                  <div class="package-item-prices">
-                    <div class="package-price-total">48 000 ₽</div>
-                    <div class="package-price-per-hour">
-                      (4 800 ₽ за одну консультацию)
-                    </div>
-                  </div>
-                </div>
-
-                <div class="package-divider"></div>
-
-                <div class="package-item package-emdr">
-                  <div class="package-item-header">
-                    <h4 class="package-item-title">Пакет EMDR</h4>
-                    <span class="package-item-count">5 консультаций</span>
-                  </div>
-                  <div class="package-item-prices">
-                    <div class="package-price-total">32 000 ₽</div>
-                    <div class="package-price-per-hour">
-                      (6 500 ₽ за одну консультацию)
-                    </div>
-                  </div>
-                </div>
-
-                <div class="package-divider"></div>
-
-                <div class="package-item package-emdr">
-                  <div class="package-item-header">
-                    <h4 class="package-item-title">Пакет EMDR</h4>
-                    <span class="package-item-count">10 консультаций</span>
-                  </div>
-                  <div class="package-item-prices">
-                    <div class="package-price-total">63 000 ₽</div>
-                    <div class="package-price-per-hour">
-                      (6 300 ₽ за одну консультацию)
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="about-image-wrapper">
+              <img src="assets/images/ветка.png" alt="" class="about-branch" />
+              <img src="assets/images/обо мне.png" alt="" class="about-photo" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="reviews">
-      <div class="container">
-        <div class="section-eyebrow">
-          <h3 class="section-name">отзывы</h3>
-        </div>
-
-        <div class="heading-container">
-          <h2 class="h2">Что говорят клиенты</h2>
-          <p class="heading-description mw-585">
-            Реальные истории людей, которые изменили свою жизнь благодаря нашей
-            работе.
-          </p>
-        </div>
-
-        <div class="reviews-navigation">
-          <button class="reviews-btn reviews-btn-prev" id="reviews-prev">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M15 18L9 12L15 6"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+      </section>
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services-wrapper">
+            <div class="services-images">
+              <img
+                src="assets/images/services1.png"
+                alt=""
+                class="services-img-1"
               />
-            </svg>
-          </button>
-          <button class="reviews-btn reviews-btn-next" id="reviews-next">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M9 18L15 12L9 6"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+              <img
+                src="assets/images/services2.png"
+                alt=""
+                class="services-img-2"
               />
-            </svg>
-          </button>
-        </div>
-
-        <div class="swiper reviews-slider" id="reviews-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "На самом деле я не знала в какое русло уйдет наше общение, во
-                  время наших встреч открылось несколько важных вещей о которых
-                  я даже не задумывалась, что меня откровенно потрясло. Казалось
-                  бы все на поверхности, но не тут то было, это очень голубой
-                  процесс. Мне стало ясно ЧТО МНЕ МЕШАЕТ, осталось понять
-                  ПОЧЕМУ. И вот тут начинается самое интересное, это работа с
-                  собой и конечно же с Оксаной"
-                </p>
-              </div>
             </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "Оксана, спасибо тебе огромное. Я чуть ли не все 26 лет
-                  постоянно думала о том, как изменить себя, свою жизнь, начать
-                  с чистого листа, преобразиться. А надо было начинать с того,
-                  чтобы разобраться в себе и понять, кто я и чего хочу.
-                  <br /><br />
-                  Путь еще долгий, но первые результаты уже переплюнули все мои
-                  ожидания. <br /><br />
-                  Я счастлива, что попала именно к тебе - мне очень легко
-                  раскрываться тебе на сессиях, я без стеснения рассказываю о
-                  каких-то вещах, о которых даже близкой подруге бы рассказывала
-                  с зажимом, боясь быть неправильно понятой.
-                  <br /><br />Спасибо, что ведешь меня на этом пути!"
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "У меня такое окно в груди открылось! В плечах! <br />
-                  У меня столько места сейчас здесь!!!! Я просто СТОЛЬКИМ новым,
-                  своим, классным и вдохновляющим могу это пространство
-                  заполнить <br /><br />
-                  Я в шоке, у меня как будто третий глаз открылся <br />
-                  Новый путь<br />
-                  Новая жизнь<br /><br />
-                  Блин я просто в шоке<br /><br />
-                  Я тебе очень благодарна"
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "Добрый день! <br />Оксана, благодарю за консультацию, которая
-                  позволила мне ответить на многие вопросы и посмотреть на
-                  ситуацию с другой стороны. Чувство тревоги, которое охватывало
-                  меня в начале сессии, снизилось до минимальных значений и я
-                  обрела спокойствие, принятие ситуации и желание действовать.
-                  Спасибо за поддержку и понимание ситуации!"
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "Оксана, привет! <br />
-                  Хочу поделиться впечатлениями, после занятий с тобой
-                  <br />Выбрала твои консультации интуитивно и не прогадала! С
-                  тобой легко, полезно и позитивно! <br />
-                  Стереотип о занятиях с психологом, травмах, слезах - разрушен.
-                  С тобой я учусь познавать себя, ощущать, чувствовать и
-                  действовать. Наставник, спасибо за веру, силы и знания"
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "Оксана, хочу выразить огромную благодарность за наш первый
-                  сеанс-знакомство. После нашей беседы, я поняла над чем надо
-                  работать и куда двигаться дальше. И самое главное, я получила
-                  понимание и поддержку, что в моем случае таку нужно. Спасибо"
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "Оксана, добрый день. Спасибо за консультацию. Мне
-                  понравилось, что весь процесс у вас так четко выстроен, всё
-                  системно. Это позволяет эффективно и быстро разобрать
-                  волнующую ситуацию и найти путь решения. Мне нравится ваша
-                  доброжелательность, это позволяет лучше раскрыться и честно
-                  ответить на вопросы."
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "Оксана, хотела бы поблагодарить вас за проделанную работу! Вы
-                  мне очень помогли в принятии решений, просмотра волнующих меня
-                  ситуаций под разными углами, уменьшить тревогу в кризисный
-                  момент! В процессе работы вы уверенно направляли ход моих
-                  мыслей в заданном направлении, после сеанса я всегда находила
-                  себя в состоянии уверенности и найденных ориентиров."
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "Хороший специалист, умеешь расположить к себе, считаю это
-                  хорошее качество в данной сфере, для меня особенно. Было
-                  проведено пару встреч из которых я многое для себя поняла и
-                  открыла. И что главное, мне хочется продолжать работать над
-                  собой с тобой."
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "После сессий чувствую себя воодушевленной, готовой покорять
-                  весь мир. Так же общаясь на сессии смотришь на себя на свои
-                  качества и на свои действия с другой стороны, так как ты
-                  Оксана, помогаешь взглянуть на себя по другому. Лучше начинаю
-                  понимать и разбираться в себе, так же прислушиваться больше к
-                  себе самой. Эмоциональное состояние лучше. Благодарю тебя за
-                  твою работу со мной"
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <p class="review-text">
-                  "Оксана, добрый день! Скажу честно, наше занятие мне очень
-                  помогло, стало значительнее легче морально. Часто обращаюсь к
-                  слову-якорю в сложные моменты, сразу же горечь уходит . Эмоции
-                  от занятия только самые положительные ! Сразу начала
-                  налаживать свою жизнь, строить планы, «собралась» морально .
-                  Оксана-ты замечательный профессионал, занятие прошло в
-                  максимально комфортной и позитивной атмосфере Очень рада
-                  нашему знакомству и спасибо за ПОМОЩЬ !"
-                </p>
+            <div class="services-content">
+              <h2>С ЧЕМ Я ПОМОГАЮ</h2>
+              <ul class="services-list">
+                <li class="services-item">
+                  <div class="services-item-header">
+                    <span class="services-item-num">01</span>
+                    <span class="services-item-text"
+                      >Проблемы самооценки и уверенности</span
+                    >
+                    <span class="services-item-icon">+</span>
+                  </div>
+                </li>
+                <li class="services-item">
+                  <div class="services-item-header">
+                    <span class="services-item-num">02</span>
+                    <span class="services-item-text"
+                      >Проблемы самореализации и денег</span
+                    >
+                    <span class="services-item-icon">+</span>
+                  </div>
+                </li>
+                <li class="services-item">
+                  <div class="services-item-header">
+                    <span class="services-item-num">03</span>
+                    <span class="services-item-text"
+                      >Взаимоотношения мужчины и женщины на всех этапах</span
+                    >
+                    <span class="services-item-icon">+</span>
+                  </div>
+                </li>
+                <li class="services-item">
+                  <div class="services-item-header">
+                    <span class="services-item-num">04</span>
+                    <span class="services-item-text"
+                      >Личностные кризисы, прохождение этапов горевания</span
+                    >
+                    <span class="services-item-icon">+</span>
+                  </div>
+                </li>
+                <li class="services-item">
+                  <div class="services-item-header">
+                    <span class="services-item-num">05</span>
+                    <span class="services-item-text"
+                      >Формирование внутренней опоры, абьюзивные отношения</span
+                    >
+                    <span class="services-item-icon">+</span>
+                  </div>
+                </li>
+                <li class="services-item">
+                  <div class="services-item-header">
+                    <span class="services-item-num">06</span>
+                    <span class="services-item-text">Тревожность</span>
+                    <span class="services-item-icon">+</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="services-buttons">
+                <button class="button services-btn-primary">
+                  оставить заявку
+                </button>
+                <button class="button services-btn-secondary">
+                  читать отзывы
+                </button>
               </div>
             </div>
           </div>
-          <div class="swiper-pagination reviews-dots" id="reviews-dots"></div>
         </div>
-      </div>
-    </section>
-
-    <section class="videos">
-      <div class="container">
-        <div class="section-eyebrow">
-          <h3 class="section-name">видео</h3>
-        </div>
-
-        <div class="heading-container">
-          <h2 class="h2">Полезные материалы</h2>
-          <p class="heading-description mw-585">
-            Короткие видео с практическими советами и упражнениями для работы с
-            собой.
-          </p>
-        </div>
-
-        <div class="videos-grid">
-          <div class="video-item">
-            <div class="video-container">
-              <video controls preload="metadata">
-                <source src="videos/video3.mp4" type="video/mp4" />
-                Ваш браузер не поддерживает видео.
-              </video>
-            </div>
-            <h4 class="video-title">Из чего складываются отношения?</h4>
-            <p class="video-description">
-              Помогу определить тип ваших отношений – здоровые или созависимые,
-              и понять причины их формирования
-            </p>
-          </div>
-          <div class="video-item">
-            <div class="video-container">
-              <video controls preload="metadata">
-                <source src="videos/video2.mp4" type="video/mp4" />
-                <source src="videos/video2.mp4" type="video/mp4" />
-                Ваш браузер не поддерживает видео.
-              </video>
-            </div>
-            <h4 class="video-title">
-              Эмоции в отношениях. <br />
-              Для чего они нам нужны.
-            </h4>
-            <p class="video-description">
-              Рассказываю, для чего нужно понимать, что мы чувствуем, и как это
-              простое умение помогает улучшить все сферы жизни.
-            </p>
-          </div>
-
-          <div class="video-item">
-            <div class="video-container">
-              <video controls preload="metadata">
-                <source src="videos/video4.mp4" type="video/mp4" />
-                Ваш браузер не поддерживает видео.
-              </video>
-            </div>
-            <h4 class="video-title">О стыде и вине.</h4>
-            <p class="video-description">
-              Рассказываю откуда берутся эти чувства и что с этим делать.
-            </p>
-          </div>
-          <div class="video-item">
-            <div class="video-container">
-              <video controls preload="metadata">
-                <source src="videos/video1.mp4" type="video/mp4" />
-                <source src="videos/video1.webm" type="video/webm" />
-                Ваш браузер не поддерживает видео.
-              </video>
-            </div>
-            <h4 class="video-title">Как всегда выигрывать?</h4>
-            <p class="video-description">
-              Рассказываю о том, что такое ошибки на самом деле и как перестать
-              их бояться, чтобы увереннее достигать своих целей.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="container">
-        <div class="section-eyebrow">
-          <h3 class="section-name">контакты</h3>
-        </div>
-
-        <div class="contact-content">
-          <div class="contact-left">
-            <h2 class="h2">Свяжитесь со мной</h2>
-
-            <div class="contact-info">
-              <div class="contact-item">
-                <h4 class="contact-item-title">Telegram</h4>
-                <p class="contact-item-value">
-                  <a href="https://t.me/Oksana_psy_kpt"
-                    ><u>@oksana_psy_kpt</u></a
-                  >
+      </section>
+      <section class="services-cards-section" id="services-list">
+        <img
+          src="assets/images/ветка.png"
+          alt=""
+          class="services-cards-branch"
+        />
+        <div class="container">
+          <h2 class="services-cards-title">УСЛУГИ</h2>
+          <div class="services-slider-viewport">
+            <div class="services-slider" id="servicesSlider">
+              <div class="service-card">
+                <span class="service-card-badge">Индивидуальная терапия</span>
+                <p class="service-card-desc">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat
+                  cursus risus, non facilisis justo ligula non lectus. Morbi ac
+                  mi sed turpis consequat interdum magna cursus
                 </p>
-                <p class="contact-item-description">
-                  Пн–Пт: 9:00–20:00, Сб: 10:00–16:00
-                </p>
+                <div class="service-card-details">
+                  <div class="service-card-row">
+                    <span class="service-card-label">Работа:</span>
+                    <span class="service-card-value">индивидуальная</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Длительность:</span>
+                    <span class="service-card-value">1 месяц</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Стоимость:</span>
+                    <span class="service-card-value service-card-price"
+                      >10 000 р.</span
+                    >
+                  </div>
+                </div>
+                <button class="service-card-btn">подробнее</button>
               </div>
-
-              <div class="contact-item">
-                <h4 class="contact-item-title">Email</h4>
-                <a href="mailto:oml1010@mail.ru" class="contact-item-value"
-                  >oml1010@mail.ru</a
-                >
-                <p class="contact-item-description">
-                  Отвечаю в течение 24 часов
+              <div class="service-card">
+                <span class="service-card-badge">Групповая терапия</span>
+                <p class="service-card-desc">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat
+                  cursus risus, non facilisis justo ligula non lectus. Morbi ac
+                  mi sed turpis consequat interdum magna cursus
                 </p>
+                <div class="service-card-details">
+                  <div class="service-card-row">
+                    <span class="service-card-label">Работа:</span>
+                    <span class="service-card-value">групповая</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Длительность:</span>
+                    <span class="service-card-value">2 месяца</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Стоимость:</span>
+                    <span class="service-card-value service-card-price"
+                      >7 000 р.</span
+                    >
+                  </div>
+                </div>
+                <button class="service-card-btn">подробнее</button>
               </div>
-
-              <div class="contact-item">
-                <h4 class="contact-item-title">Онлайн-консультации</h4>
-                <p class="contact-item-value">Zoom</p>
-                <p class="contact-item-description">
-                  По всему миру на русском языке
+              <div class="service-card">
+                <span class="service-card-badge">Онлайн консультация</span>
+                <p class="service-card-desc">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat
+                  cursus risus, non facilisis justo ligula non lectus. Morbi ac
+                  mi sed turpis consequat interdum magna cursus
                 </p>
+                <div class="service-card-details">
+                  <div class="service-card-row">
+                    <span class="service-card-label">Работа:</span>
+                    <span class="service-card-value">индивидуальная</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Длительность:</span>
+                    <span class="service-card-value">1 сессия</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Стоимость:</span>
+                    <span class="service-card-value service-card-price"
+                      >5 000 р.</span
+                    >
+                  </div>
+                </div>
+                <button class="service-card-btn">подробнее</button>
+              </div>
+              <div class="service-card">
+                <span class="service-card-badge">Семейная терапия</span>
+                <p class="service-card-desc">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat
+                  cursus risus, non facilisis justo ligula non lectus. Morbi ac
+                  mi sed turpis consequat interdum magna cursus
+                </p>
+                <div class="service-card-details">
+                  <div class="service-card-row">
+                    <span class="service-card-label">Работа:</span>
+                    <span class="service-card-value">парная</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Длительность:</span>
+                    <span class="service-card-value">3 месяца</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Стоимость:</span>
+                    <span class="service-card-value service-card-price"
+                      >12 000 р.</span
+                    >
+                  </div>
+                </div>
+                <button class="service-card-btn">подробнее</button>
+              </div>
+              <div class="service-card">
+                <span class="service-card-badge">Эриксоновский гипноз</span>
+                <p class="service-card-desc">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat
+                  cursus risus, non facilisis justo ligula non lectus. Morbi ac
+                  mi sed turpis consequat interdum magna cursus
+                </p>
+                <div class="service-card-details">
+                  <div class="service-card-row">
+                    <span class="service-card-label">Работа:</span>
+                    <span class="service-card-value">индивидуальная</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Длительность:</span>
+                    <span class="service-card-value">1 сессия</span>
+                  </div>
+                  <div class="service-card-row">
+                    <span class="service-card-label">Стоимость:</span>
+                    <span class="service-card-value service-card-price"
+                      >8 000 р.</span
+                    >
+                  </div>
+                </div>
+                <button class="service-card-btn">подробнее</button>
               </div>
             </div>
           </div>
-
-          <div class="contact-right">
-            <h3 class="form-title">Запись на консультацию</h3>
-            <form class="contact-form">
-              <div class="form-group">
-                <label for="name" class="form-label">Ваше имя</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="form-input"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="phone" class="form-label">Телефон</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  class="form-input"
-                  placeholder="+7 999 999 99 99"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="message" class="form-label">Сообщение</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form-textarea"
-                  placeholder="Напишите кратко, с чем хотели бы поработать…"
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="form-button">Отправить</button>
-
-              <p class="form-disclaimer">
-                Отправляя форму, вы соглашаетесь на обработку персональных
-                данных
+          <div class="services-slider-controls">
+            <button
+              class="slider-arrow"
+              id="sliderPrev"
+              aria-label="Предыдущий"
+            >
+              &#8249;
+            </button>
+            <button class="slider-arrow" id="sliderNext" aria-label="Следующий">
+              &#8250;
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="advantages" id="advantages">
+        <img src="assets/images/ветка.png" alt="" class="advantages-branch" />
+        <div class="container">
+          <h2 class="advantages-title">ПОЧЕМУ МЕНЯ ВЫБИРАЮТ</h2>
+          <div class="advantages-grid">
+            <div class="advantages-card advantages-card--pink">
+              <span class="advantages-badge">преимущество</span>
+              <p class="advantages-text">
+                Praesent auctor, magna sed tincidunt vulputate, erat erat cursus
+                risus, non facilisis justo ligula non lectus. Morbi ac mi sed
+                turpis consequat interdum. Phasellus a arcu ac elit
               </p>
-            </form>
+            </div>
+            <div class="advantages-card advantages-card--beige">
+              <span class="advantages-badge">преимущество</span>
+              <p class="advantages-text">
+                Praesent auctor, magna sed tincidunt vulputate, erat erat cursus
+                risus, non facilisis justo ligula non lectus. Morbi ac mi sed
+                turpis consequat interdum. Phasellus a arcu ac elit
+              </p>
+            </div>
+            <div class="advantages-card advantages-card--beige">
+              <span class="advantages-badge">преимущество</span>
+              <p class="advantages-text">
+                Praesent auctor, magna sed tincidunt vulputate, erat erat cursus
+                risus, non facilisis justo ligula non lectus. Morbi ac mi sed
+                turpis consequat interdum. Phasellus a arcu ac elit
+              </p>
+            </div>
+            <div class="advantages-card advantages-card--pink">
+              <span class="advantages-badge">преимущество</span>
+              <p class="advantages-text">
+                Praesent auctor, magna sed tincidunt vulputate, erat erat cursus
+                risus, non facilisis justo ligula non lectus. Morbi ac mi sed
+                turpis consequat interdum. Phasellus a arcu ac elit
+              </p>
+            </div>
+          </div>
+          <div class="advantages-buttons">
+            <button class="button advantages-btn-primary">
+              оставить заявку
+            </button>
+            <button class="button advantages-btn-secondary">
+              читать отзывы
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="education" id="education">
+        <div class="container">
+          <img
+            src="assets/images/образование.png"
+            alt="Образование"
+            class="education-bg"
+          />
+          <div class="education-overlay">
+            <h2>мое образование</h2>
+            <div class="education-cards">
+              <div class="education-card">
+                <span class="education-badge">ВУЗ</span>
+                <p class="education-card-text">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat
+                  cursus risus, non facilisis justo ligula non lectus. Morbi ac
+                  mi sed turpis consequat interdum. Phasellus a arcu ac elit
+                </p>
+              </div>
+              <div class="education-card">
+                <span class="education-badge">ВУЗ</span>
+                <p class="education-card-text">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat
+                  cursus risus, non facilisis justo ligula non lectus. Morbi ac
+                  mi sed turpis consequat interdum. Phasellus a arcu ac elit
+                </p>
+              </div>
+            </div>
+            <p class="education-desc">
+              Praesent auctor, magna sed tincidunt vulputate, erat erat cursus
+              risus, non facilisis justo ligula non lectus. Morbi ac mi sed
+              turpis consequat interdum. Phasellus a arcu ac elit
+            </p>
+            <button class="button education-btn">оставить заявку</button>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <img src="assets/images/ветка.png" alt="" class="reviews-branch" />
+        <div class="container">
+          <h2 class="reviews-title">ОТЗЫВЫ</h2>
+          <div class="reviews-slider-viewport">
+            <div class="reviews-slider" id="reviewsSlider">
+              <div class="review-card">
+                <span class="review-badge">имя фамилия</span>
+                <p class="review-text">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus
+                </p>
+              </div>
+              <div class="review-card">
+                <span class="review-badge">имя фамилия</span>
+                <p class="review-text">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus
+                </p>
+              </div>
+              <div class="review-card">
+                <span class="review-badge">имя фамилия</span>
+                <p class="review-text">
+                  Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus Praesent auctor, magna sed tincidunt vulputate, erat erat cursus risus, non facilisis justo ligula non lectus. Morbi ac mi sed turpis consequat interdum magna cursus
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-slider-controls">
+            <button class="slider-arrow" id="reviewsPrev" aria-label="Предыдущий">&#8249;</button>
+            <button class="slider-arrow" id="reviewsNext" aria-label="Следующий">&#8250;</button>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <img src="assets/images/ветка.png" alt="" class="contact-branch" />
+        <div class="container">
+          <h2>СВЯЖИТЕСЬ СО МНОЙ</h2>
+          <ul class="contact-list">
+            <li><a href="tel:+79999999999">+7 (999) 999 99-99</a></li>
+            <li><a href="https://t.me/generalova_psy" target="_blank">Telegram</a></li>
+            <li><a href="https://wa.me/79999999999" target="_blank">Whatsapp</a></li>
+            <li><a href="https://instagram.com/generalova_psy" target="_blank">Instagram</a></li>
+          </ul>
+          <button class="button contact-btn">оставить заявку</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <a href="#" class="footer-logo">генералова Анастасия</a>
+          <div class="footer-grid">
+            <div class="footer-col">
+              <a href="https://t.me/generalova_psy" target="_blank" class="footer-social-link">TELEGRAM</a>
+              <a href="https://wa.me/79999999999" target="_blank" class="footer-social-link">WHATSAPP</a>
+              <a href="https://instagram.com/generalova_psy" target="_blank" class="footer-social-link">INSTAGRAM</a>
+            </div>
+            <div class="footer-col">
+              <h3 class="footer-col-title">Меню</h3>
+              <ul class="footer-nav">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3 class="footer-col-title">Юридическая информация</h3>
+              <ul class="footer-nav">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Публичная оферта</a></li>
+                <li><a href="#">Согласие на обработку данных</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Popups -->
-    <div class="popup-overlay" id="popup-overlay">
-      <div class="popup" id="popup">
-        <button class="popup-close" id="popup-close">
-          <span class="popup-close-line"></span>
-          <span class="popup-close-line"></span>
-        </button>
-        <div class="popup-content">
-          <h3 class="popup-title" id="popup-title"></h3>
-          <div class="popup-text" id="popup-text"></div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>website by <a href="https://sowithout.ru" target="_blank">sowithout</a><br /><a href="https://t.me/sowithout" target="_blank">связаться с создателем</a></p>
         </div>
       </div>
-    </div>
-
-    <script>
-      // Burger menu functionality
-      const burger = document.getElementById("burger");
-      const menu = document.getElementById("menu");
-
-      burger.addEventListener("click", () => {
-        burger.classList.toggle("active");
-        menu.classList.toggle("active");
-
-        // Prevent body scroll when menu is open
-        if (menu.classList.contains("active")) {
-          document.body.style.overflow = "hidden";
-        } else {
-          document.body.style.overflow = "";
-        }
-      });
-
-      // Close menu when clicking on menu links
-      const menuLinks = document.querySelectorAll(".menu__link");
-      menuLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          burger.classList.remove("active");
-          menu.classList.remove("active");
-          document.body.style.overflow = "";
-        });
-      });
-
-      // Close menu when clicking outside
-      document.addEventListener("click", (e) => {
-        if (!burger.contains(e.target) && !menu.contains(e.target)) {
-          burger.classList.remove("active");
-          menu.classList.remove("active");
-          document.body.style.overflow = "";
-        }
-      });
-
-      // Popup functionality
-      const popupOverlay = document.getElementById("popup-overlay");
-      const popup = document.getElementById("popup");
-      const popupClose = document.getElementById("popup-close");
-      const popupTitle = document.getElementById("popup-title");
-      const popupText = document.getElementById("popup-text");
-
-      // Popup content data
-      const popupData = {
-        cbt: {
-          title: "Когнитивно-поведенческая терапия (КПТ)",
-          content: `
-            <p>КПТ — это научно обоснованный метод психотерапии, который помогает изменить негативные мысли и поведенческие паттерны.</p>
-            
-            <p><strong>Как это работает:</strong></p>
-            <p>Мы вместе исследуем ваши мысли, чувства и поведение, чтобы найти связи между ними. Затем разрабатываем стратегии для изменения деструктивных паттернов.</p>
-            
-            <p><strong>Что можно решить с помощью КПТ:</strong></p>
-            <p>• Тревожность и панические атаки<br>
-            • Депрессия и подавленное настроение<br>
-            • Низкая самооценка<br>
-            • Проблемы в отношениях<br>
-            • Стресс и эмоциональное выгорание</p>
-            
-            <p>КПТ дает практические инструменты, которые вы сможете использовать самостоятельно даже после завершения терапии.</p>
-          `,
-        },
-        emdr: {
-          title: "EMDR (Десенсибилизация и переработка движением глаз)",
-          content: `
-            <p>EMDR — это эффективный метод работы с травматичными воспоминаниями и негативными переживаниями.</p>
-            
-            <p><strong>Как это работает:</strong></p>
-            <p>Во время сессии вы следите за движением моих пальцев или светом, одновременно вспоминая травматичную ситуацию. Это помогает мозгу естественным образом переработать болезненные воспоминания.</p>
-            
-            <p><strong>Что можно проработать с помощью EMDR:</strong></p>
-            <p>• Травматичные события из прошлого<br>
-            • Фобии и страхи<br>
-            • Панические атаки<br>
-            • Горе и утрата<br>
-            • Детские травмы<br>
-            • Посттравматическое стрессовое расстройство (ПТСР)</p>
-            
-            <p>EMDR позволяет быстро и эффективно снизить интенсивность болезненных воспоминаний, не требуя подробного рассказа о травме.</p>
-          `,
-        },
-      };
-
-      // Open popup
-      function openPopup(popupType) {
-        const data = popupData[popupType];
-        if (data) {
-          popupTitle.textContent = data.title;
-          popupText.innerHTML = data.content;
-          popupOverlay.classList.add("active");
-          document.body.style.overflow = "hidden";
-        }
-      }
-
-      // Close popup
-      function closePopup() {
-        popupOverlay.classList.remove("active");
-        document.body.style.overflow = "";
-      }
-
-      // Event listeners for popup buttons
-      document.querySelectorAll(".about__extra-button").forEach((button) => {
-        button.addEventListener("click", (e) => {
-          e.preventDefault();
-          const popupType = button.getAttribute("data-popup");
-          openPopup(popupType);
-        });
-      });
-
-      // Close popup events
-      popupClose.addEventListener("click", closePopup);
-
-      popupOverlay.addEventListener("click", (e) => {
-        if (e.target === popupOverlay) {
-          closePopup();
-        }
-      });
-
-      // Close popup with Escape key
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && popupOverlay.classList.contains("active")) {
-          closePopup();
-        }
-      });
-
-      // Initialize reviews slider when DOM is loaded
-      document.addEventListener("DOMContentLoaded", () => {
-        // Initialize Swiper
-        const swiper = new Swiper(".reviews-slider", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          loop: true,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: "#reviews-next",
-            prevEl: "#reviews-prev",
-          },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 25,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          },
-        });
-
-        // Set first frame as poster for videos
-        const videos = document.querySelectorAll("video");
-        videos.forEach((video) => {
-          video.addEventListener("loadedmetadata", () => {
-            // Create canvas to capture first frame
-            const canvas = document.createElement("canvas");
-            const ctx = canvas.getContext("2d");
-
-            // Set canvas size to video size
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-
-            // Seek to first frame
-            video.currentTime = 0.1;
-
-            video.addEventListener(
-              "seeked",
-              () => {
-                // Draw first frame to canvas
-                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-
-                // Convert canvas to data URL and set as poster
-                const dataURL = canvas.toDataURL("image/jpeg", 0.8);
-                video.poster = dataURL;
-              },
-              { once: true }
-            );
-          });
-        });
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </footer>
   </body>
 </html>
